@@ -1,0 +1,9 @@
+label {
+  padding: 1vh;
+  background-color: $window-navy;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $window-navy-hover;
+  }
+}

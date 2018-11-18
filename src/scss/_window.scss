@@ -1,0 +1,21 @@
+.window {
+  padding: 8vh 5vh 5vh;
+  background: $window-navy;
+
+  &__label {
+    position: absolute;
+    top: 3%;
+    right: 10px;
+    border: 1px solid $text-grey;
+  }
+
+  &__paragraph {
+    margin-bottom: 2vh;
+  }
+
+  &__headline {
+    text-align: center;
+    font-size: 24px;
+  }
+
+}

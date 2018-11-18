@@ -1,0 +1,45 @@
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  font-family: 'Lato', Arial, sans-serif;
+  font-size: 24px;
+  background-color: $body-grey;
+  color: $text-grey;
+
+  &__input {
+    position: absolute;
+    left: -9999px;
+  }
+
+  &__label {
+    margin: auto;
+  }
+
+  &__window {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+    width: 50%;
+  }
+
+  &__input:checked ~ &__window{
+    display: block;
+    animation-name: display-on;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in;
+  }
+}
+
+@keyframes display-on {
+  from {
+    transform: translate(-50%, 0%) scale(0.5);
+  }
+
+  to {
+    transform: translate(-50%, -50%) scale(1);
+  }
+}
