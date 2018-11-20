@@ -4,7 +4,7 @@
   flex-direction: column;
   height: 100vh;
   font-family: 'Lato', Arial, sans-serif;
-  font-size: 24px;
+  font-size: 3vw;
   background-color: $body-grey;
   color: $text-grey;
 
@@ -19,7 +19,7 @@
 
   &__window {
     position: absolute;
-    top: 35%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
